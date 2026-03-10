@@ -1,0 +1,358 @@
+:root {
+    /* Gradiente dorado principal */
+    --gold-gradient: linear-gradient(
+        135deg,
+        #996515,
+        #ffd700,
+        #fff8dc,
+        #ffd700,
+        #996515
+    );
+
+    /* Gradiente dorado horizontal */
+    --gold-gradient-horizontal: linear-gradient(
+        90deg,
+        #996515,
+        #ffd700,
+        #fff8dc,
+        #ffd700,
+        #996515
+    );
+
+    /* Metal claro */
+    --silver-gradient: linear-gradient(
+        to bottom,
+        #f5f5f5 0%,
+        #cfcfcf 25%,
+        #ffffff 50%,
+        #bfbfbf 75%,
+        #9e9e9e 100%
+    );
+}
+
+body {
+    background:
+        silver;
+    
+font-family: 'Lora', serif;
+padding-top:70px;
+
+}
+
+.dark-mode {
+    background: linear-gradient(to bottom, black 40%, rgb(32, 32, 32) 80%, rgb(55, 55, 55) 100%);
+    color: white;
+}
+
+.subrayado-oro{
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.subrayado-oro::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: var(--gold-gradient);
+    border-radius: 2px;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: none;
+    width: 30px;
+    height: 20px;
+
+    background:
+        var(--gold-gradient-horizontal) top,
+        var(--gold-gradient-horizontal) center,
+        var(--gold-gradient-horizontal) bottom;
+
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+}
+
+.basicmargen {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.dark-mode .card-metal{
+    color:black;
+}
+
+.card-metal .popover-body {
+    background: white;
+    color: black;
+}
+
+.cardwi {
+    max-width: 367px;
+    width: 100%;
+}
+
+.dark-mode .card-metal .popover-body{
+    background: #1a1a1a;
+    color: white;
+}
+
+.dark-mode .card-metal .popover-header{
+    color: black;
+}
+
+.dark-mode .card-metal{
+    background:
+    linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    var(--gold-gradient);
+
+    color: white;
+}
+
+.dark-mode .whitetxt {
+    color: white;
+}
+
+.dark-mode p {
+    color: white;
+}
+
+.accordion-button {
+    background: linear-gradient(
+    to bottom,
+    #a1a1a1 0%,
+    #c9c9c9 25%,
+    #ffffff 50%,
+    #dadada 75%,
+    #b3b3b3 100%
+    );
+    color: #333;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(
+    to bottom,
+    #a1a1a1 0%,
+    #c9c9c9 25%,
+    #ffffff 50%,
+    #dadada 75%,
+    #b3b3b3 100%
+    );
+}
+
+.accordion-item {
+    border: 3px solid transparent;
+    overflow: hidden;
+
+    background:
+    linear-gradient(white, white) padding-box,
+    var(--gold-gradient);
+
+    color: black;
+}
+
+.dark-mode .accordion-item {
+    background:
+    linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    var(--gold-gradient);
+
+    color: white;
+}
+
+.navbar-custom {
+    background:
+        url("../IMGS/leathertexture.jpg"),
+        linear-gradient(
+            to bottom,
+            #5a3b1e,
+            #8b5a2b,
+            #5a3b1e
+        );
+
+    background-size: cover, 100%;
+    background-position: center;
+    color: #f5f5f5;
+
+    border-bottom: 3px solid transparent;
+
+    border-image: var(--gold-gradient-horizontal) 1;
+}
+
+.navbar-custom .nav-link {
+    background: var(--gold-gradient);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-custom .nav-link:hover {
+    filter: brightness(1.5);
+}
+
+.leather {
+    padding: 15px;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 12px;
+    color: #f5f5f5;
+
+    border: 3px solid transparent;
+
+    background:
+        url("../IMGS/leathertexture.jpg") padding-box,
+        var(--gold-gradient)
+        border-box;
+
+    background-size: cover, 100% 100%;
+    background-position: center, center;
+    background-clip: padding-box, border-box;
+}
+
+.espada-img {
+    border: 3px solid gold;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+h1 span {
+    display: inline-block;
+    padding-bottom: 2px;
+
+    background: var(--gold-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.fijo {
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.c-item {
+    height: 96vh;
+}
+
+@media (max-width: 768px) {
+    .c-item {
+        height: 25vh;
+    }
+}
+
+.img-borde-dorado {
+    border: 3px solid transparent;
+    border-radius: 6px;
+
+    background:
+        linear-gradient(white, white) padding-box,
+        var(--gold-gradient) border-box;
+}
+
+.c-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.acorwi {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.card-metal {
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    background:
+    linear-gradient(white, white) padding-box,
+    var(--gold-gradient)
+    border-box;
+
+    color: black;
+}
+
+.btn-cueroplata {
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+
+    border: 3px solid transparent;
+
+    color: #e6e6e6;
+
+    background:
+        url("../IMGS/leathertexture.jpg") padding-box,
+        var(--silver-gradient)
+        border-box;
+
+    background-size: cover, 100% 100%;
+    background-position: center, center;
+    background-clip: padding-box, border-box;
+
+    box-shadow:
+        inset 0 2px 6px rgba(0,0,0,0.6),
+        0 4px 8px rgba(0,0,0,0.5);
+
+    transition: all 0.3s ease;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+
+.btn-hoverfx:hover {
+    filter: brightness(1.15);
+    transform: translateY(-3px);
+    border-color: #ffd700 !important;
+}
+
+.texto-gold{
+    background: var(--gold-gradient);
+    padding-bottom: 3px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-metal .dropdown-item{
+color: white;
+}
+
+.card-metal .dropdown-item:hover{
+background-color: rgba(255,255,255,0.1);
+}
+
+.navbar .dropdown-toggle::after {
+border:none;
+content:"⚔";
+font-size:10px;
+margin-left:8px;
+
+background: var(--gold-gradient);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* MODO CLARO */
+.dropdown-menu.card-metal .dropdown-item{
+color: black;
+}
+
+/* MODO OSCURO */
+.dark-mode .dropdown-menu.card-metal .dropdown-item{
+color: white;
+}
